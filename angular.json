@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
+  "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "ciclodevida": {
+    "myApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ciclodevida",
+            "outputPath": "dist/myApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ciclodevida:build"
+            "browserTarget": "myApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ciclodevida:build:production"
+              "browserTarget": "myApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ciclodevida:build"
+            "browserTarget": "myApp:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ciclodevida:serve"
+            "devServerTarget": "myApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ciclodevida:serve:production"
+              "devServerTarget": "myApp:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ciclodevida"
+  "defaultProject": "myApp"
 }

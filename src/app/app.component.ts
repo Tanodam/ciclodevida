@@ -7,12 +7,11 @@ import { Usuario } from './clases/usuario';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Ciclo de Vida';
+  title = 'Nueva Aplicación';
   name: string;
+ 
+  
+ 
 
-  usuario = new Usuario;
 
-  Ingresar(){
-    console.log(this.usuario);
-  }
 }
